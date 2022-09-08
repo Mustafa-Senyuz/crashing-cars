@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    justify-content: center;
+
+    width: 100vw;
+    align-items: center;
+
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+nav{
+    background-color: cadetblue;
+    position: relative;
+    width: 80vw;
+
+    height: 50px;
+
+}
+
+.car1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    position: absolute;
+    right: 0px;
+    border: rgb(255, 0, 170) 1px solid;
+
+    width: 50px;
+    height: 50px;
+
+    transition-duration: 10000ms linear;
+}
+
+.car2{
+
+    background-color: yellow;
+    padding: 10px 10px;
+    position: absolute;
+    left: 0px ;
+    border: chartreuse 1px solid;
+
+    width: 50px; 
+    height: 50px;
+
+    
+    transition-duration: 10000ms linear;
+}
+
+.road.active .car1{
+    transform: translateX(-1044px);
+}
+
+.road.active .car2{
+    transform: translateX(1044px); /* 1044px */
+}
+
+button{
+    margin-top: 10px;
+}
+
+.label1,.label2{
+    font-size: 1em;
+    font-family: "Verdana";
+    font-weight: bold;
+    color: rgb(53, 73, 31);
+}
+
+input:focus{
+    background-color: lightblue;
+}
+
+
+.aftercrash{
+    font-size: 32px;
+    
+    color: white;
+}
+
+@media( max-width:600px){
+    .h1{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .label1,.label2{
+        font-size: 12px;
+    }
+
+}
+
+
